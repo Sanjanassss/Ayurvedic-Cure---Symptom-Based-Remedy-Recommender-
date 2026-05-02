@@ -1,0 +1,210 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f4f4f9; /* Light background color */
+	color: #333;
+	line-height: 1.6;
+	padding: 30px;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; /* Full viewport height */
+	text-align: center;
+	flex-direction: column;
+  }
+  
+  /* Centered text for .wel class */
+  .wel {
+	text-align: center;
+  }
+  
+  /* Image Styling */
+  img {
+	padding: 20px;
+	display: block;
+	margin: auto;
+	background-color: #fff;
+	opacity: 0.9; /* Slightly higher opacity for clearer images */
+	border-radius: 50%; /* Circular image */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow around the image */
+	max-width: 100%;
+	transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+  }
+  
+  img:hover {
+	opacity: 1; /* Increase opacity on hover for emphasis */
+  }
+  
+  /* Horizontal Rule Styling */
+  hr {
+	width: 80%;
+	border: 0;
+	border-top: 2px solid #ddd;
+	margin: 30px auto;
+  }
+  
+  /* Submission Section Styling */
+  .submition {
+	margin: auto;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	flex-wrap: wrap; /* Allow for wrapping on smaller screens */
+  }
+  
+  /* Left and Right Columns */
+  .subleft, .subright {
+	width: 380px;
+	padding: 20px;
+	font-size: 18px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .subleft {
+	text-align: left;
+  }
+  
+  .subright {
+	text-align: right;
+  }
+  
+  .subleft b, .subright b {
+	color: #0056b3; /* Dark blue color for emphasis */
+	font-weight: bold;
+  }
+  
+  .subleft p, .subright p {
+	color: #555; /* Soft gray for paragraph text */
+  }
+  
+  /* Entry Button Styling */
+  .entry {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+}
+
+.entry:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.entry:active {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+    transform: scale(1);
+}
+
+/* Add a subtle animation effect to the button */
+.entry {
+    animation: bounceIn 1s ease-out;
+}
+
+/* Keyframe animation for bounce-in effect */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(15px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+  
+  /* Table Styles */
+  .table-container {
+	margin: 40px auto;
+	width: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333;
+  }
+  
+  .table-container table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+  }
+  
+  .table-container th, .table-container td {
+	padding: 12px;
+	border: 1px solid #ddd;
+	text-align: center;
+  }
+  
+  .table-container th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .table-container tr:hover {
+	background-color: #f9f9f9;
+	cursor: pointer;
+  }
+  
+  /* Styling for Subtle Shadows and Soft Borders */
+  .card {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for content */
+	margin: 20px 0;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media screen and (max-width: 768px) {
+	.submition {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.subleft, .subright {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  
+	.entry {
+	  width: 100%;
+	  padding: 20px;
+	}
+  
+	img {
+	  max-width: 80%; /* Reduce image size on smaller screens */
+	}
+  
+	hr {
+	  width: 90%;
+	}
+  
+	.table-container {
+	  width: 90%;
+	}
+  }
+  

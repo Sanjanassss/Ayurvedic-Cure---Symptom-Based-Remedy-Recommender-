@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheading */
+  h1:nth-of-type(2) {
+    color: #0056b3;
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Image styling */
+  img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+  
+  /* Submission Information Section */
+  .submition {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Left side of the submission */
+  .subleft {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .subleft b {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subleft br {
+    line-height: 1.8;
+  }
+  
+  /* Right side of the submission */
+  .subright {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .subright b {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subright br {
+    line-height: 1.8;
+  }
+  
+  /* Entry Section (for the button-like link) */
+  .entry {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .entry:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styling */
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .submition {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subleft, .subright {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  
+    .entry {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

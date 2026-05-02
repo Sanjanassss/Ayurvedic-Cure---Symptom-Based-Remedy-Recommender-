@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #fff);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.HeaderTitle img {
+    max-width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.HeaderTitle img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    font-size: 25px;
+    font-weight: bold;
+    color: #db1d18;
+    text-align: end;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+/* Main Form Section */
+form {
+    width: 100%;
+    max-width: 400px; /* Reduced width for a smaller form */
+    margin: 40px auto; /* Reduced margin */
+    background: linear-gradient(to right, #ffffff, #fafafa);
+    padding: 30px; /* Reduced padding */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 15px; /* Reduced margin */
+    font-family: 'Arial', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Input Fields */
+.FormElement {
+    width: 100%;
+    padding: 12px 29px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    margin-bottom: 15px; /* Reduced margin */
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.FormElement:focus {
+    border-color: #ff7e5f;
+    background-color: #fff5e0;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.4);
+    outline: none;
+    animation: pulseBorder 0.5s ease-out;
+}
+
+.FormElement:invalid {
+    border-color: #ff7e5f;
+    background-color: #ffe1e1;
+}
+
+.FormElement::placeholder {
+    color: #aaa;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.FormElement:focus::placeholder {
+    opacity: 0;
+}
+
+/* Submit Button */
+.button {
+    width: 50%;
+    padding: 14px; /* Reduced padding */
+    background-color: #ff7e5f;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: back3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 126, 95, 0.3);
+}
+
+
+.button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 126, 95, 0.4);
+}
+
+.button:active {
+    background-color: #e98a6a;
+    transform: scale(0.98);
+}
+
+/* Sign Up and Links */
+.WantSignUp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; /* Reduced font size */
+    color: #333;
+    text-align: center;
+    margin-top: 15px; /* Reduced margin */
+}
+
+.WantSignUp a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.WantSignUp a:hover {
+    color: #feb47b;
+    text-decoration: underline;ground-color 0.
+    transform: scale(1.05);
+}
+
+/* Notify (Error/Success Message) */
+.notify {
+    display: none;
+    width: 40%;
+    margin: 20px auto;
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+}
+
+.notify.success {
+    background-color: #4caf50;
+}
+
+.notify.error {
+    background-color: #ff3b3b;
+}
+
+.notify.show {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Cross Button for Notify */
+.cross {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cross:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Form Element Styling (Optional) */
+.input-container {
+    position: relative;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.input-container label {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 14px; /* Reduced font size */
+    color: #aaa;
+    transition: all 0.3s ease;
+}
+
+.FormElement:focus + label,
+.FormElement:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #ff7e5f;
+}
+
+.input-container .FormElement {
+    padding-left: 30px;
+}
+
+/* Footer (if needed) */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Form elements will take full width on smaller screens */
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .FormElement {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .WantSignUp a {
+        font-size: 12px;
+    }
+
+    .input-container label {
+        font-size: 14px;
+    }
+}
